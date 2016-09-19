@@ -11,10 +11,10 @@ License: GPL2
 */
 
 
-// if (class_exists("GFForms"))
-// if (class_exists("GFCommon"))
-// if (function_exists('gravity_form'))
-if ( is_plugin_active( 'gravityforms/gravityforms.php' ) ) {
+// if (class_exists("GFForms")) {
+// if (class_exists( 'RGForms' )) {
+// if (class_exists("GFCommon")) {
+if (function_exists('gravity_form')) {
     add_action('gform_editor_js', 'brw_gf_ready_class_selector_revised_render_editor_js');
 }
 
