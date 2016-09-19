@@ -10,11 +10,11 @@ Author URI: https://github.com/bryanwillis
 License: GPL2
 */
 
-
+// if (function_exists('gravity_form')) {
 // if (class_exists("GFForms")) {
-// if (class_exists( 'RGForms' )) {
 // if (class_exists("GFCommon")) {
-if (function_exists('gravity_form')) {
+
+if (class_exists( 'RGForms' )) {
     add_action('gform_editor_js', 'brw_gf_ready_class_selector_revised_render_editor_js');
 }
 
